@@ -23,7 +23,7 @@ struct FruitCardView: View {
                     .resizable()
                     .scaledToFit()
                     .shadow(color:  Color(red: 0,green: 0, blue: 0,opacity: 0.15),radius: 8, x: 6, y: 8)
-                
+                    .scaleEffect(isAnimating ? 1.0 : 0.6)
                 
                 // FRUIT: TITLE
                 Text(fruit.title)
@@ -31,7 +31,7 @@ struct FruitCardView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
-                    .scaleEffect(isAnimating ? 1.0 : 0.6)
+                    
                 // FRUIT: HEADLINE
                 Text(fruit.headline)
                     .foregroundColor(.white)
